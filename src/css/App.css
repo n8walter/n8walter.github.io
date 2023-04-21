@@ -1,0 +1,10 @@
+.header {
+  display:flex;
+  padding: 15px;
+  gap: 20px;
+  justify-content: center;
+}
+.header a {
+  text-decoration: none; /* Remove underline from the links */
+  color: #333;
+}
