@@ -2,6 +2,10 @@ import { React, useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { db } from '../firebase-config';
 import { doc, getDoc } from 'firebase/firestore';
+import '../css/IndividualArticlePage.css';
+import Moment from 'react-moment';
+
+
 
 function IndividualArticlePage() {
   const routingData = useParams();
@@ -20,11 +24,12 @@ function IndividualArticlePage() {
   }, []);
 
   return (
-    <div>
-      <h3>{article.title}</h3>
-      <h4>{article.author}</h4>
-      <h4>{article.timestamp?.seconds}</h4>
-      <p>{article.body}</p>
+    <div className="container">
+      {article.image ? <img src={article.image} alt="articleImage" className='image' /> : null}
+      <h3 className="title">{article.title}</h3>
+      <h4 className="author">{article.author}</h4>
+      <Moment className="timestamp" unix>{article.timestamp?.seconds}</Moment>
+      <p className="body">{article.body}</p>
     </div>
   )
 };
