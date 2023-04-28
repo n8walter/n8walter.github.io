@@ -1,14 +1,14 @@
 import './css/App.css';
 import { Link, BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HomePage from './Components/homePage.js';
-import aboutPage from './Components/aboutPage';
-import AllArticlesPage from './Components/allArticlesPage';
-import IndividualArticlePage from './Components/individualArticlePage';
+import HomePage from './Components/HomePage.js';
+import aboutPage from './Components/AboutPage';
+import AllArticlesPage from './Components/AllArticlesPage';
+import IndividualArticlePage from './Components/IndividualArticlePage';
 
 function App() {
   return (
     <section className="App">
-      <Router>
+      <Router basename='/'>
         <div className='header'>
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
