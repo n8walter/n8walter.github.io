@@ -1,7 +1,7 @@
 import './css/App.css';
 import { Link, BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './Components/HomePage.js';
-import aboutPage from './Components/AboutPage';
+import AboutPage from './Components/AboutPage';
 import AllArticlesPage from './Components/AllArticlesPage';
 import IndividualArticlePage from './Components/IndividualArticlePage';
 
@@ -16,7 +16,7 @@ function App() {
         </div>
         <Routes>
           <Route path="/" Component={HomePage} />
-          <Route path="/about" Component={aboutPage} />
+          <Route path="/about" Component={AboutPage} />
           <Route path="/articles" Component={AllArticlesPage} />
           <Route path="/articles/:articleTitle" Component={IndividualArticlePage} />
         </Routes>
