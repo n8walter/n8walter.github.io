@@ -1,6 +1,6 @@
 import { React } from 'react';
 import '../css/HomePage.css'
-import LunarComponent from '../Components/lunarComponent';
+import LunarComponent from './lunarComponent';
 import internetWater from '../images/internetWater.jpg';
 
 

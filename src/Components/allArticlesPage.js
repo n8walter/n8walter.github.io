@@ -1,5 +1,5 @@
 import { React } from 'react';
-import ArticleListComponent from '../Components/articleListComponent';
+import ArticleListComponent from './ArticleListComponent';
 import '../css/AllArticlesPage.css'
 
 function AllArticlesPage() {

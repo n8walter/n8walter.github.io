@@ -1,9 +1,9 @@
 import { React } from 'react';
 
-function aboutPage() {
+function AboutPage() {
   return (
     <h3>About Page</h3>
   )
 };
 
-export default aboutPage;
+export default AboutPage;
