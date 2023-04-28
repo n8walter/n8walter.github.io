@@ -8,7 +8,7 @@ import IndividualArticlePage from './Components/IndividualArticlePage';
 function App() {
   return (
     <section className="App">
-      <Router>
+      <Router basename='/'>
         <div className='header'>
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
